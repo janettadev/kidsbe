@@ -1,4 +1,7 @@
 import React from "react";
+import book from "../../img/mats 1.png";
+
+import React from "react";
 import book from "../../img/mats 1.png"
 const Open = () => {
 	return (
