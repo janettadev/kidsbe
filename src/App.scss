@@ -1,6 +1,6 @@
 body {
 	font-family: "Nunito", "Roboto", sans-serif;
-   background: #f5f4ff;
+	background: #f5f4ff;
 }
 .container {
 	width: 1440px;
@@ -279,4 +279,89 @@ a {
 	}
 }
 
-
+@media (max-width: 376px) {
+	.container {
+		width: 376px;
+		max-width: 100%;
+	}
+	#open {
+		.open {
+			h1 {
+				font-size: 22px;
+				line-height: 32px;
+				text-align: center;
+				width: 345px;
+			}
+			&--info {
+				&__img {
+					margin-left: 60px;
+					display: flex;
+					img {
+						width: 420px;
+						height: 430px;
+					}
+					&--rectangle1 {
+						left: 240px;
+					}
+					&--rectangle2 {
+						width: 301px;
+						height: 278px;
+						top: 120px;
+						left: 0;
+					}
+					&--text1 {
+						width: 345px;
+						height: 124px;
+						top: 440px;
+						left: 15px;
+						p {
+							width: 293px;
+						}
+					}
+					&--text2 {
+						width: 345px;
+						height: 124px;
+						top: 585px;
+						left: 15px;
+						p {
+							width: 293px;
+						}
+					}
+				}
+				&__content {
+					h2 {
+						left: 35px;
+						font-size: 15px;
+						width: 345px;
+					}
+					&--blocks {
+						margin: 495px 0 0 40px;
+						flex-wrap: wrap;
+						&__block1 {
+							width: 345px;
+							height: 100px;
+							p {
+								width: 293px;
+							}
+						}
+						&__block2 {
+							width: 345px;
+							height: 100px;
+							p {
+								width: 293px;
+							}
+						}
+					}
+				}
+			}
+			h4 {
+				font-size: 3px;
+				width: 345px;
+				margin: 500px 0 0 50px;
+				font-size: 14px;
+				align-items: center;
+		
+			}
+		}
+	}
+}
