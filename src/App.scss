@@ -461,7 +461,141 @@ input {
 		}
 	}
 }
-
+#modern {
+	background: rgb(50, 180, 122);
+	padding: 100px 0;
+	width: 100%;
+	.modern {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		&--info {
+			h1 {
+				font-family: Nunito, sans-serif;
+				font-size: 48px;
+				font-weight: 700;
+				line-height: 55px;
+				color: rgb(255, 255, 255);
+				width: 691px;
+				span {
+					color: rgb(255, 207, 60);
+				}
+			}
+			p {
+				color: rgb(255, 255, 255);
+				font-family: Roboto, sans-serif;
+				font-size: 24px;
+				font-weight: 400;
+				margin: 26px 0 40px 0;
+			}
+			&__inputs {
+				width: 564px;
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				&--input1 {
+					h2 {
+						color: rgb(255, 255, 255);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						margin-bottom: 10px;
+					}
+					input {
+						padding: 14px 89px 11px 47px;
+						border-radius: 15px 50px 15px 50px;
+						background: rgb(255, 255, 255);
+						color: rgb(183, 180, 211);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						letter-spacing: 0%;
+						text-align: left;
+						border: none;
+					}
+				}
+				&--input2 {
+					h2 {
+						color: rgb(255, 255, 255);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						margin-bottom: 10px;
+					}
+					input {
+						padding: 14px 89px 11px 47px;
+						border-radius: 15px 50px 15px 50px;
+						background: rgb(255, 255, 255);
+						color: rgb(183, 180, 211);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						letter-spacing: 0%;
+						text-align: left;
+						border: none;
+					}
+				}
+			}
+			&__btn {
+				width: 100%;
+				margin-top: 26px;
+				display: flex;
+				gap: 68px;
+				&--text {
+					display: flex;
+					align-items: flex-start;
+					width: 255px;
+					gap: 15px;
+					span {
+						color: rgb(213, 208, 255);
+						width: 8px;
+						height: 5.82px;
+						margin-top: 13px;
+					}
+					h3 {
+						color: rgb(213, 208, 255);
+						font-family: Roboto, sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 16px;
+					}
+				}
+				button {
+					padding: 13px 75px;
+					border-radius: 15px 50px 15px 50px;
+					background:rgb(255, 207, 60);
+					color: rgb(255, 255, 255);
+					font-family: Roboto, sans-serif;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+					letter-spacing: 0%;
+					text-align: center;
+				}
+			}
+		}
+		&--image {
+			position: relative;
+			display: block;
+			&__img1 {
+				position: absolute;
+				top: -49px;
+				right: -30px;
+				z-index: 3;
+			}
+			&__img2 {
+				position: absolute;
+				top: 5px;
+				z-index: 2;
+				right: -60px;
+			}
+		}
+	}
+}
 #kids {
 	background: rgb(239, 106, 98);
 	position: relative;
@@ -726,7 +860,7 @@ input {
 	}
 	#lesson {
 		padding: 40px 0;
-		min-width: 160vh;
+		min-width: 145vh;
 		overflow: hidden;
 		.lesson {
 			width: 100%;
@@ -825,6 +959,50 @@ input {
 			}
 			img {
 				display: none;
+			}
+		}
+	}
+	#modern {
+		padding: 40px 0;
+		min-width: 145vh;
+		overflow: hidden;
+		.modern {
+			width: 100%;
+			&--info {
+				h1 {
+					font-size: 32px;
+					line-height: 46px;
+					width: 469px;
+				}
+				p {
+					font-size: 18px;
+					margin-bottom: 24px;
+				}
+				&__inputs {
+					width: 272px;
+					flex-wrap: wrap;
+					gap: 10px;
+				}
+				&__btn {
+					width: 302px;
+					flex-direction: row-reverse;
+					flex-direction: column-reverse;
+					gap: 20px;
+				}
+			}
+			&--image {
+				&__img1 {
+					top: 153px;
+					width: 300px;
+					height: 454px;
+					right: -20px;
+				}
+				&__img2 {
+					top: 185px;
+					right: -40px;
+					width: 350px;
+					height: 290px;
+				}
 			}
 		}
 	}
@@ -1035,6 +1213,47 @@ input {
 					font-size: 18px;
 					width: 340px;
 				}
+			}
+		}
+	}
+	#modern {
+		padding: 36px 0;
+		min-width: 83vh;
+		.modern {
+			justify-content: center;
+			&--info {
+				width: 100%;
+				h1 {
+					text-align: center;
+					font-size: 22px;
+					width: 317px;
+					line-height: 32px;
+					margin-left: 30px;
+				}
+				p {
+					font-size: 14px;
+					text-align: center;
+					margin: 0 0 23px 0;
+				}
+				&__inputs {
+					width: 100%;
+					input {
+						padding: 14px 170px 11px 47px;
+					}
+				}
+				&__btn {
+					width: 375px;
+					button {
+						width: 100%;
+						padding: 12px 112px;
+					}
+					&--text {
+						width: 100%;
+					}
+				}
+			}
+			&--image {
+				display: none;
 			}
 		}
 	}

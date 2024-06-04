@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdCheckmark } from "react-icons/io";
-import kids2 from "../img/kids2.png"
-import group31 from "../img/Group 31.png"
+import kids2 from "../../img/kids2.png"
+import group31 from "../../img/Group 31.png"
 
 const Lesson = () => {
 	return (
