@@ -1,10 +1,11 @@
 body {
 	font-family: "Nunito", "Roboto", sans-serif;
 	background: #f5f4ff;
+	width: 100%;
 }
 .container {
 	width: 1440px;
-	max-width: 100%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 button {
@@ -13,6 +14,10 @@ button {
 }
 a {
 	text-decoration: none;
+}
+input {
+	border: none;
+	outline: none;
 }
 
 #open {
@@ -174,6 +179,142 @@ a {
 		}
 		h4 {
 			display: none;
+		}
+	}
+}
+
+#lesson {
+	background: rgb(121, 103, 255);
+	padding: 100px 0;
+	width: 100%;
+	.lesson {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		&--info {
+			h1 {
+				font-family: Nunito, sans-serif;
+				font-size: 48px;
+				font-weight: 700;
+				line-height: 55px;
+				color: rgb(255, 255, 255);
+				width: 691px;
+				span {
+					color: rgb(255, 207, 60);
+				}
+			}
+			p {
+				color: rgb(255, 255, 255);
+				font-family: Roboto, sans-serif;
+				font-size: 24px;
+				font-weight: 400;
+				margin: 26px 0 40px 0;
+			}
+			&__inputs {
+				width: 564px;
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				&--input1 {
+					h2 {
+						color: rgb(255, 255, 255);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						margin-bottom: 10px;
+					}
+					input {
+						padding: 14px 89px 11px 47px;
+						border-radius: 15px 50px 15px 50px;
+						background: rgb(255, 255, 255);
+						color: rgb(183, 180, 211);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						letter-spacing: 0%;
+						text-align: left;
+						border: none;
+					}
+				}
+				&--input2 {
+					h2 {
+						color: rgb(255, 255, 255);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						margin-bottom: 10px;
+					}
+					input {
+						padding: 14px 89px 11px 47px;
+						border-radius: 15px 50px 15px 50px;
+						background: rgb(255, 255, 255);
+						color: rgb(183, 180, 211);
+						font-family: Roboto, sans-serif;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 30px;
+						letter-spacing: 0%;
+						text-align: left;
+						border: none;
+					}
+				}
+			}
+			&__btn {
+				width: 100%;
+				margin-top: 26px;
+				display: flex;
+				gap: 68px;
+				&--text {
+					display: flex;
+					align-items: flex-start;
+					width: 255px;
+					gap: 15px;
+					span {
+						color: rgb(213, 208, 255);
+						width: 8px;
+						height: 5.82px;
+						margin-top: 13px;
+					}
+					h3 {
+						color: rgb(213, 208, 255);
+						font-family: Roboto, sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 16px;
+					}
+				}
+				button {
+					padding: 13px 75px;
+					border-radius: 15px 50px 15px 50px;
+					background: rgb(45, 188, 124);
+					color: rgb(255, 255, 255);
+					font-family: Roboto, sans-serif;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+					letter-spacing: 0%;
+					text-align: center;
+				}
+			}
+		}
+		&--image {
+			position: relative;
+			display: block;
+			&__img1 {
+				position: absolute;
+				top: -62px;
+				right: -30px;
+				z-index: 3;
+			}
+			&__img2 {
+				position: absolute;
+				top: -42px;
+				z-index: 2;
+				right: 10px;
+			}
 		}
 	}
 }
@@ -482,6 +623,10 @@ a {
 }
 
 @media (max-width: 770px) {
+	.container {
+		width: 770px;
+		max-width: 90&;
+	}
 	#open {
 		padding: 50px 0;
 		.open {
@@ -576,6 +721,48 @@ a {
 				text-align: center;
 				margin-top: -50px;
 				width: 620px;
+			}
+		}
+	}
+	#lesson {
+		padding: 40px 0;
+		min-width: 160vh;
+		overflow: hidden;
+		.lesson {
+			width: 100%;
+			&--info {
+				h1 {
+					font-size: 32px;
+					line-height: 46px;
+					width: 469px;
+				}
+				p {
+					font-size: 18px;
+					margin-bottom: 24px;
+				}
+				&__inputs {
+					width: 272px;
+					flex-wrap: wrap;
+					gap: 10px;
+				}
+				&__btn {
+					width: 302px;
+					flex-direction: row-reverse;
+					flex-direction: column-reverse;
+					gap: 20px;
+				}
+			}
+			&--image {
+				margin-right: -20px;
+				&__img1 {
+					top: 114px;
+					width: 423px;
+					height: 493px;
+				}
+				&__img2 {
+					top: 71px;
+					right: -30px;
+				}
 			}
 		}
 	}
@@ -775,6 +962,47 @@ a {
 				font-size: 14px;
 				align-items: center;
 				font-family: Nunito, sans-serif;
+			}
+		}
+	}
+	#lesson {
+		padding: 36px 0;
+		min-width: 83vh;
+		.lesson {
+			justify-content: center;
+			&--info {
+				width: 100%;
+				h1 {
+					text-align: center;
+					font-size: 22px;
+					width: 317px;
+					line-height: 32px;
+					margin-left: 30px;
+				}
+				p {
+					font-size: 14px;
+					text-align: center;
+					margin: 0 0 23px 0;
+				}
+				&__inputs {
+					width: 100%;
+					input {
+						padding: 14px 170px 11px 47px;
+					}
+				}
+				&__btn {
+					width: 375px;
+					button {
+						width: 100%;
+						padding: 12px 112px;
+					}
+					&--text {
+						width: 100%;
+					}
+				}
+			}
+			&--image {
+				display: none;
 			}
 		}
 	}
