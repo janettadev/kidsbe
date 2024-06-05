@@ -215,7 +215,7 @@ input {
 			justify-content: center;
 			gap: 140px;
 			&__block {
-				// width: 222px;
+				width: 222px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -247,6 +247,76 @@ input {
 				&--climb {
 					width: 190px;
 				}
+			}
+		}
+	}
+}
+
+#harmony {
+	padding: 100px 0;
+	overflow: hidden;
+	margin-bottom: 70px;
+	.harmony {
+		h1 {
+			width: 691px;
+			color: rgb(45, 45, 45);
+			font-family: Nunito, sans-serif;
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 50px;
+			text-align: left;
+		}
+		h3 {
+			width: 657px;
+			color: rgb(45, 45, 45);
+			font-family: Roboto, sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0%;
+			text-align: left;
+			margin: 9px 0 27px 0;
+		}
+		&--info {
+			display: flex;
+			position: relative;
+			&__text {
+				h4 {
+					width: 555px;
+					color: rgb(45, 45, 45);
+					font-family: Roboto, sans-serif;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 30px;
+					letter-spacing: 0%;
+					text-align: left;
+				}
+				&--boxes {
+					display: flex;
+					align-items: center;
+					gap: 30px;
+					&__box {
+						display: flex;
+						align-items: center;
+						gap: 37px;
+						p {
+							width: 229px;
+							color: rgb(45, 45, 45);
+							font-family: Roboto, sans-serif;
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 24px;
+							letter-spacing: 0%;
+							text-align: left;
+						}
+					}
+				}
+			}
+			&__image {
+				position: absolute;
+				top: -340px;
+				right: -470px;
+				z-index: -2;
 			}
 		}
 	}
@@ -939,6 +1009,42 @@ input {
 			}
 		}
 	}
+	#harmony {
+		min-width: 145vh;
+		.harmony {
+
+			h1 {
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 46px;
+				text-align: center;
+				width: 708px;
+			}
+			h3 {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 30px;
+				text-align: center;
+				margin-left: 30px;
+			}
+			&--info {
+				flex-direction: row-reverse;
+				&__text {
+					margin-top: 500px;
+					&--boxes {
+						justify-content: space-around;
+						gap: 90px;
+					}
+				}
+				&__image {
+					width: 731px;
+					height: 499px;
+					top: 0;
+					right: -40px;
+				}
+			}
+		}
+	}
 	#lesson {
 		padding: 40px 0;
 		min-width: 145vh;
@@ -1298,6 +1404,52 @@ input {
 						height: 123.01px;
 					}
 				}
+			}
+		}
+	}
+	#harmony {
+		padding: 0;
+		min-width: 80vh;
+		.harmony {
+			margin-left: 20px;
+			h1 {
+				width: 345px;
+				font-size: 22px;
+				line-height: 32px;
+			}
+			h3 {
+				margin:20px 0 30px 0;
+				width: 345px;
+				font-size: 15px;
+				line-height: 24px;
+			}
+			&--info {
+				margin-bottom: -10px;
+				&__text {
+					margin-top: 300px;
+					h4{
+						display: none;
+					}
+					&--boxes {
+						flex-direction: column;
+						gap: 0;
+						&__box {
+							width: 360px;
+							display: flex;
+							justify-content: space-between;
+							
+							p {
+								width: 270px;
+							}
+						}
+					}
+				}
+				&__image {
+					width: 445px;
+					height: 300px;
+					left: -20px;
+				}
+				
 			}
 		}
 	}

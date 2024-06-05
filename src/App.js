@@ -8,12 +8,14 @@ import Open from "./components/section#2/Open";
 import Modern from "./components/modern/Modern";
 import Lesson from "./components/lesson/Lesson";
 import Study from "./components/study/Study";
+import Harmony from "./components/harmony/Harmony";
 
 function App() {
 	return (
 		<div className="App">
 			<Open />
 			<Study />
+			<Harmony/>
 			<Lesson />
 			<Section5 />
 			<Section6 />
