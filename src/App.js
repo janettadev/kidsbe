@@ -7,20 +7,22 @@ import Section7 from "./components/section7/section";
 import Open from "./components/section#2/Open";
 import Modern from "./components/modern/Modern";
 import Lesson from "./components/lesson/Lesson";
+import Study from "./components/study/Study";
 
 function App() {
-  return (
-    <div className="App">
-		<Open/>
-    <Lesson/>
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Modern/>
-      <Kids />
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Open />
+			<Study />
+			<Lesson />
+			<Section5 />
+			<Section6 />
+			<Section7 />
+			<Modern />
+			<Kids />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

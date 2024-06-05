@@ -183,6 +183,75 @@ input {
 	}
 }
 
+#study {
+	padding-bottom: 100px;
+	.study {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			color: rgb(45, 45, 45);
+			font-family: Nunito, sans-serif;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 50px;
+			text-align: center;
+		}
+		p {
+			width: 838px;
+			color: rgb(109, 105, 140);
+			font-family: Roboto, sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0%;
+			text-align: center;
+			margin: -4px 0 56px 0;
+		}
+		&--blocks {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			justify-content: center;
+			gap: 140px;
+			&__block {
+				// width: 222px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: -60px;
+				h3 {
+					color: rgb(109, 105, 140);
+					font-family: Roboto, sans-serif;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 24px;
+					letter-spacing: 0%;
+					text-align: center;
+				}
+				&--brain {
+					width: 382px;
+				}
+				&--body {
+					width: 180px;
+				}
+				&--girl {
+					width: 228px;
+				}
+				&--orig {
+					width: 220px;
+				}
+				&--mom {
+					width: 280px;
+				}
+				&--climb {
+					width: 190px;
+				}
+			}
+		}
+	}
+}
+
 #lesson {
 	background: rgb(121, 103, 255);
 	padding: 100px 0;
@@ -461,6 +530,7 @@ input {
 		}
 	}
 }
+
 #modern {
 	background: rgb(50, 180, 122);
 	padding: 100px 0;
@@ -567,7 +637,7 @@ input {
 				button {
 					padding: 13px 75px;
 					border-radius: 15px 50px 15px 50px;
-					background:rgb(255, 207, 60);
+					background: rgb(255, 207, 60);
 					color: rgb(255, 255, 255);
 					font-family: Roboto, sans-serif;
 					font-size: 16px;
@@ -596,6 +666,7 @@ input {
 		}
 	}
 }
+
 #kids {
 	background: rgb(239, 106, 98);
 	position: relative;
@@ -858,6 +929,16 @@ input {
 			}
 		}
 	}
+	#study {
+		.study {
+			p {
+				width: 586px;
+			}
+			&--blocks {
+				margin-left: 40px;
+			}
+		}
+	}
 	#lesson {
 		padding: 40px 0;
 		min-width: 145vh;
@@ -900,6 +981,7 @@ input {
 			}
 		}
 	}
+
 	#section5 {
 		.section5 {
 			margin: 20px;
@@ -1140,6 +1222,82 @@ input {
 				font-size: 14px;
 				align-items: center;
 				font-family: Nunito, sans-serif;
+			}
+		}
+	}
+	#study {
+		.study {
+			margin-left: 40px;
+			h1 {
+				width: 330px;
+				font-size: 22px;
+				line-height: 32px;
+				text-align: center;
+				font-weight: 700;
+			}
+			p {
+				width: 370px;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+			&--blocks {
+				margin-left: 0;
+				width: 100%;
+				gap: 50px;
+				align-items: flex-start;
+				&__block {
+					width: 140px;
+					margin-bottom: 0;
+					h3 {
+						font-size: 13px;
+						font-weight: 400;
+						line-height: 18px;
+						margin-top: 20px;
+					}
+					&--brain {
+						width: 160px;
+					}
+					&--brainimg {
+						width: 112px;
+						height: 94px;
+					}
+					&--body {
+						width: 160px;
+					}
+					&--bodyimg {
+						width: 88.8px;
+						height: 119.92px;
+					}
+					&--girl {
+						width: 160px;
+					}
+					&--girlimg {
+						width: 53px;
+						height: 104px;
+					}
+					&--orig {
+						width: 160px;
+					}
+					&--origimg {
+						width: 130px;
+						height: 103px;
+					}
+					&--mom {
+						width: 160px;
+					}
+					&--momimg {
+						width: 109px;
+						height: 113px;
+					}
+					&--climb {
+						width: 160px;
+					}
+					&--climbimg {
+						width: 94px;
+						height: 123.01px;
+					}
+				}
 			}
 		}
 	}
