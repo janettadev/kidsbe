@@ -11,24 +11,26 @@ import Modern from "./components/modern/Modern";
 import Lesson from "./components/lesson/Lesson";
 import Study from "./components/study/Study";
 import Harmony from "./components/harmony/Harmony";
+import Section9 from "./components/section9/section9";
 
 function App() {
-	return (
-		<div className="App">
-			<Header />
-			<Hero />
-			<Open />
-			<Study />
-			<Harmony />
-			<Lesson />
-			<Section5 />
-			<Section6 />
-			<Section7 />
-			<Modern />
-			<Kids />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="App">
+      <Header />
+      <Hero />
+      <Open />
+      <Study />
+      <Harmony />
+      <Lesson />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Modern />
+      <Section9 />
+      <Kids />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
